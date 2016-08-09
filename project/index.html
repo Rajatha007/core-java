@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="myApp">
+
+<head>
+
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+  
+     <h1>Customer</h1>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#add">Add</a></li>
+        <li><a href="#update">Update</a></li>
+        <li><a href="#delete">Delete</a></li>
+        <li><a href="#view">View</a></li>
+      </ul>
+   
+
+  <div id="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+  </div>
+  
+  
+</body>
+
+</html>
